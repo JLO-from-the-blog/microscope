@@ -9,10 +9,12 @@
 
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
   <?php wp_head(); ?>
 </head>
 
+<!-- ^ MAR added link href's to Font Awesome and Google fonts -->
 
 <body <?php body_class(); ?>>
 
