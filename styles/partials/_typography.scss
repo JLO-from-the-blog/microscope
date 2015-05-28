@@ -1,21 +1,40 @@
 body {
 	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 1rem;
+	font-size: 16px;
 }
 
-.mib h1 {
-font-size: 5rem;
+span.mib-title {
+background-color: black;
+padding: 1%;
 }
 
-.mib h2 {
+span.mib-body {
+background-color: black;
+padding: 1%;
+}
+
+h1 {
+font-size: 7rem;
+}
+
+h2.maintitle {
+font-size: 4rem;
+color: white;
+font-weight: 300;
+}
+
+h3.maintitle {
 
 }
 
-.mib h3 {
-
+p.maintitle {
+color: white;
+font-size: 2rem;
 }
 
-.mib p {
+// arrow pointing down
+
+.downward-dog {
 
 }
 
