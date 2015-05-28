@@ -30,6 +30,24 @@ body {
   font-size: 5rem; }
 
 /* ALL THE PARTIALS GO HERE */
+.cool-container {
+  max-width: 800px;
+  position: relative; }
+
+.yellow-box {
+  width: 93%;
+  padding-bottom: 60%;
+  background-color: yellow;
+  position: relative;
+  top: 0;
+  left: 0; }
+
+.fwd-img {
+  max-width: 90%;
+  position: absolute;
+  top: 6%;
+  left: 6%; }
+
 /* =============================================================================
                    Normalize, border box and clearfix
    ========================================================================== */
