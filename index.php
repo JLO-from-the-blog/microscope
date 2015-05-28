@@ -2,13 +2,15 @@
 <?php get_header(); ?>
 
 <div class="main">
+
   <div class="container">
 
     <div class="content">
-    		<?php get_template_part( 'loop', 'index' );	?>
-    </div> <!--/.content -->
 
-    <?php get_sidebar(); ?>
+<!-- THE BELOW IS A LOOP WHICH GETS CONTENT FROM ALL POSTS AND PUBLISHES IT TO THE FRONT PAGE [jane] -->
+
+    		<!-- <?php //get_template_part( 'loop', 'index' );	?>   -->
+    </div> <!--/.content -->
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
