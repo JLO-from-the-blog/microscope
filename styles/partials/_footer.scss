@@ -1,0 +1,21 @@
+footer {
+  clear:both;
+}
+
+.mainfooter {
+  clear:both;
+  background-color: grey;
+  padding: 1%;
+}
+
+.footerParent {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.footerChild {
+
+}

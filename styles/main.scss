@@ -7,6 +7,21 @@ Author: Jane and Marlo
 Author URI: http://hackeryou.com
 */
 
+/* ALL THE PARTIALS GO HERE */
+@import "partials/base";
+@import "partials/buttons";
+@import "partials/footer";
+@import "partials/header";
+@import "partials/mixins";
+@import "partials/typography";
+
+/* ALL THE PARTIALS GO HERE */
+@import "sections/maingrid";
+@import "sections/mainhero";
+@import "sections/page";
+@import "sections/post";
+
+
 
 /* =============================================================================
                    Normalize, border box and clearfix
@@ -140,27 +155,6 @@ pre {
                    Footer (MARLO)
    ========================================================================== */
 
-footer {
-  clear:both;
-}
-
-.mainfooter {
-  clear:both;
-  background-color: lightgrey;
-  padding: 1%;
-}
-
-.footerParent {
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-}
-
-.footerChild {
-
-}
 
 
 /* =============================================================================
