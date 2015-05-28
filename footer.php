@@ -1,7 +1,14 @@
-<footer>
+<footer class="mainfooter">
   <div class="container">
-  <p>yes footer editing</p>
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+  	<div class="footerParent">
+	  	<div class="footerChild">
+		    <p>&copy; Jane and Marlo <?php echo date('Y'); ?></p>
+				<p>Proudly powered by <a href="/">WordPress</a></p>
+				<p>Theme: Microscope by <a href="/">Jane</a> and <a href="/">Marlo</a></p>
+			</div>
+			<div class="footerChild">
+				<p>social media stuff</p>
+			</div>
   </div>
 </footer>
 
