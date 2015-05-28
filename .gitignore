@@ -1,0 +1,4 @@
+node_modules
+*.pdf
+*.psd
+styles/style.css
