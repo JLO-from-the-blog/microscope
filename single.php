@@ -13,7 +13,7 @@
 
         <div class="cool-container clearfix">
 
-        <div class="yellow-box"></div>
+        <div class="image-box"></div>
         <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID, 'thumbnail') ); ?>
         <img src="<?php echo $url ?>" class="fwd-img"/>
         
@@ -32,8 +32,6 @@
           Posted by 
           <a class="name" href="<?php echo get_author_posts_url( get_the_author_meta('ID') ); ?>"><?php the_author(); ?></a> 
           On <?php the_date('D M d (H:i A)'); ?> 
-
-
           </div><!-- .entry-meta -->
 
           <div class="entry-content">
@@ -61,7 +59,14 @@
 
     </div> <!-- /.content -->
 
-    <?php get_sidebar(); ?>
+    
+    <div class="sidebar-parent">
+      <div class="sidebar-box">
+        <div class="sidebar"><?php get_sidebar(); ?></div>  
+      </div>
+    </div>
+
+
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
