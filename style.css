@@ -34,7 +34,7 @@ body {
   max-width: 800px;
   position: relative; }
 
-.yellow-box {
+.image-box {
   width: 93%;
   padding-bottom: 60%;
   background-color: yellow;
@@ -47,6 +47,9 @@ body {
   position: absolute;
   top: 6%;
   left: 6%; }
+
+.sidebar {
+  background-color: turquoise; }
 
 /* =============================================================================
                    Normalize, border box and clearfix
