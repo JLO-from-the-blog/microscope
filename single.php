@@ -2,16 +2,30 @@
 
 <div class="main">
   <div class="container">
-    <p>Hi! I am editing single.php</p>
 
     <div class="content">
+
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        
+      <!-- beginning of cool image box thing -->
+
+        <div class="cool-container clearfix">
+
+        <div class="yellow-box"></div>
+        <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID, 'thumbnail') ); ?>
+        <img src="<?php echo $url ?>" class="fwd-img"/>
+        
+        </div>
+
+        <!-- end of the image box thing -->
+
           <h1 class="entry-title"><?php the_title(); ?></h1>
 
+
           <div class="entry-meta">
-            <a href="<?php echo get_author_posts_url( get_the_author_meta('ID') ); ?>"><?php echo get_avatar( get_the_author_meta('ID'), 100); ?></a>
+            <a href="<?php echo get_author_posts_url( get_the_author_meta('ID') ); ?>"></a>
 
 <!-- <?php the_author_posts_link();?> is a shorthand -->
 
