@@ -1,9 +1,7 @@
 node_modules
 *.pdf
 *.psd
-<<<<<<< HEAD
 .gitignore
 gulpfire.js
-=======
 styles/style.css
->>>>>>> d70bacf200f4c2175873fed22bd6b9c8db418d6a
+style.css

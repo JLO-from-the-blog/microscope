@@ -3,10 +3,12 @@
 }
 
 .main-flex {
-	
+	@include flexParentRow;
+	background-color: yellow;
 }
 
 .main-box {
+	background-color: blue;
 
 }
 
