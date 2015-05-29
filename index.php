@@ -3,21 +3,42 @@
 
 <section class="main hero">
 
-<!-- THE BELOW IS A LOOP WHICH GETS CONTENT FROM ALL POSTS AND PUBLISHES IT TO THE FRONT PAGE [jane] -->
+<!-- THE BELOW IS A LOOP WHICH GETS CONTENT FROM ALL POSTS AND PUBLISHES IT TO THE FRONT PAGE [Jane] -->
 
 <?php //get_template_part( 'loop', 'index' );	?>
 
 <!-- THIS IS THE BIG HERO IMAGE PAGE WHICH PULLS IN FROM PAGES -->
 
-<?php if(have_posts()) while(have_posts()) : the_post(); ?>
+<?php //if(have_posts()) while(have_posts()) : the_post(); ?>
 
-<?php echo get_the_post_thumbnail( $page->ID, 'thumbnail' ); ?>
-			<h1><?php echo apply_filters( 'the_title', $page->post_title, $page->ID ); ?>
+<?php 
 
-<?php endwhile; ?>
+	$pageArgs = array('post_type' => 'page');
+	$pageQuery = new WP_Query($pageArgs);
+
+	if($pageQuery->have_posts())  {
+		while($pageQuery->have_posts()) {
+			$pageQuery->the_post();
+			?>
+
+		<?php  
+			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+				the_post_thumbnail('full');
+			} 
+			?>
+
+			<?php
+		}
+	}
+ ?>
+
+
+
+<?php //endwhile; ?>
+
 <p>----------test-----------</p>
-<div class="page-full-img">
 
+<div class="page-full-img">
 	<h2 class="maintitle"><span class="mib-title">Title of page</span></h2>
 	<p class="maintitle"><span class="mib-body">text of page</span></p>
 	<!-- vvv this is the div for the arrow pointing down vvvv -->

@@ -10,7 +10,7 @@ function theme_setup() {
 	*  all images will be cropped to thumbnail size (below), as well as
 	*  a square size (also below). You can add more of your own crop
 	*  sizes with add_image_size. */
-	add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
 	set_post_thumbnail_size(120, 90, true);
 	add_image_size('square', 150, 150, true);
 
