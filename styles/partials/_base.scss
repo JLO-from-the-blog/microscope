@@ -1,0 +1,29 @@
+// Base Colors
+$brandRed: #DA3F36;
+$maroon: #762E2E;
+$sectionGrey: #313131;
+$grey: #65706E;
+$darkGrey: #4c4c4c;
+$beige: #B2AF9E;
+$lightBlue: #3B4C5B;
+$lightGrey: #DFDFDF;
+
+// Base Font
+$titleFont: 'Roboto Condensed', sans-serif;
+$bodyFont: 'Helvetica', sans-serif;
+$bodyFontSerif: 'Georgia', serif;
+
+html,
+body {
+	font-size: 16px;
+	font-size: 1rem;
+	background-color: lightblue;
+	margin: 0;
+	padding: 0;
+	font-family: $titleFont;
+}
+
+h1 {
+	color: $darkGrey;
+}
+
