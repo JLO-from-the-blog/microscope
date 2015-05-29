@@ -1,26 +1,31 @@
 .page-full-img {
-
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	object-fit: fill;
+	@include flexParentCol;
+  justify-content: flex-end;
+  padding: 3%;
 }
 
 .main-flex {
 	@include flexParentRow;
-	justify-content: space-between;
-  align-items: stretch;
-	flex: 1 100%;
+	justify-content: center;
+  align-items: flex-start;
 	background-color: salmon;
+	flex-wrap:wrap;
 }
 
 .main-box {
 	background-color: lightgrey;
-	width: 50%;
 	padding: 10px;
 	border: 1px solid black;
+	flex: 1 0 50%;
+	min-width:300px;
+	// @media (max-width:800px){
+	// 	flex: 1 0 100%;
+	// }
 }
-
-// .main-box:first-child {
-// 	margin-right: 2px;
-// }
-
 
 .flex-text {
  padding: 3%;

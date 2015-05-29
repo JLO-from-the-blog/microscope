@@ -25,8 +25,6 @@
 			$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 			?>
 			
-		
-
 <div class="page-full-img" style="background-image: url(<?php echo $url?>)">
 	<h2 class="maintitle"><span class="mib-title"><?php the_title(); ?></span></h2>
 	<p class="maintitle"><span class="mib-body">text of page</span></p>
@@ -38,8 +36,6 @@
 		}
 	}
  ?>
-
-
 
 <?php //endwhile; ?>
 
