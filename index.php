@@ -22,10 +22,17 @@
 			?>
 
 		<?php  
-			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-				the_post_thumbnail('full');
-			} 
+			$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 			?>
+			
+		
+
+<div class="page-full-img" style="background-image: url(<?php echo $url?>)">
+	<h2 class="maintitle"><span class="mib-title"><?php the_title(); ?></span></h2>
+	<p class="maintitle"><span class="mib-body">text of page</span></p>
+	<!-- vvv this is the div for the arrow pointing down vvvv -->
+	<div class="downward-dog"></div>
+</div>
 
 			<?php
 		}
@@ -34,26 +41,6 @@
 
 <?php //endwhile; ?>
 
-<p>----------test-----------</p>
-
-<div class="page-full-img">
-	<h2 class="maintitle"><span class="mib-title">Title of page</span></h2>
-	<p class="maintitle"><span class="mib-body">text of page</span></p>
-	<!-- vvv this is the div for the arrow pointing down vvvv -->
-	<div class="downward-dog"></div>
-</div>
-
-<div class="page-full-img">
-	<h2 class="maintitle"><span class="mib-title">Title of page</span></h2>
-	<p class="maintitle"><span class="mib-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda perspiciatis ut soluta accusamus voluptates sint, esse iusto ipsa. Facilis vel cum quis ea, cumque id?</span></p>
-	<div class="downward-dog"></div>
-</div>
-
-<div class="page-full-img">
-	<h2 class="maintitle"><span class="mib-title">Title of page</span></h2>
-	<p class="maintitle"><span class="mib-body">text of page</span></p>
-	<div class="downward-dog"></div>
-</div>
 
 <!-- six  posts which are also flexed [jane] -->
 
@@ -86,5 +73,7 @@
 </div>
 
 </section> <!-- /.main -->
+
+
 
 <?php get_footer(); ?>
