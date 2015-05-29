@@ -4,14 +4,24 @@
 
 .main-flex {
 	@include flexParentRow;
-	background-color: yellow;
+	justify-content: space-between;
+  align-items: stretch;
+	flex: 1 100%;
+	background-color: salmon;
 }
 
 .main-box {
-	background-color: blue;
-
+	background-color: lightgrey;
+	width: 50%;
+	padding: 10px;
+	border: 1px solid black;
 }
 
-.flex-text {
+// .main-box:first-child {
+// 	margin-right: 2px;
+// }
 
+
+.flex-text {
+ padding: 3%;
 }

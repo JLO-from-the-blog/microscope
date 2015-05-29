@@ -3,14 +3,21 @@
 
 <section class="main hero">
 
-
-
 <!-- THE BELOW IS A LOOP WHICH GETS CONTENT FROM ALL POSTS AND PUBLISHES IT TO THE FRONT PAGE [jane] -->
+
 <?php //get_template_part( 'loop', 'index' );	?>
 
-<!-- +++++THIS IS THE BIG HERO IMAGE PAGE WHICH PULLS IN FROM PAGES+++++ -->
+<!-- THIS IS THE BIG HERO IMAGE PAGE WHICH PULLS IN FROM PAGES -->
 
+<?php if(have_posts()) while(have_posts()) : the_post(); ?>
+
+<?php echo get_the_post_thumbnail( $page->ID, 'thumbnail' ); ?>
+			<h1><?php echo apply_filters( 'the_title', $page->post_title, $page->ID ); ?>
+
+<?php endwhile; ?>
+<p>----------test-----------</p>
 <div class="page-full-img">
+
 	<h2 class="maintitle"><span class="mib-title">Title of page</span></h2>
 	<p class="maintitle"><span class="mib-body">text of page</span></p>
 	<!-- vvv this is the div for the arrow pointing down vvvv -->
