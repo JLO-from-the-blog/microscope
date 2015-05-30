@@ -2,7 +2,7 @@
 	width: 100%;
 	position: fixed;
 	text-decoration: none;
-	background-color: rgba(255,255,255,0.7);
+	background-color: rgba(0,0,0,0.2);
 	display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -24,8 +24,13 @@
     	padding: 5px;
     }
 
+    a {
+        color: white;
+    }
+
     li:hover {
-    	background-color: rgba(255,255,255,1);
+    	background-color: black;
+        color: cyan;
     }
   }
 }

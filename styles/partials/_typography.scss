@@ -1,39 +1,45 @@
 span.mib-title {
-background-color: black;
-padding: 1%;
+	background-color: black;
+	padding: 1%;
 }
 
 span.mib-body {
-background-color: black;
-padding: 1%;
+	background-color: black;
+	padding: 1%;
 }
 
 h1 {
-font-size: 7rem;
+	font-size: 7rem;
 }
 
-h2.maintitle {
-font-size: 4rem;
-color: white;
-font-weight: 300;
+h2.mainTitle {
+	font-size: 4rem;
+	color: white;
+	font-weight: 400;
+	font-family: $titleFont;
 }
 
-h3.maintitle {
-
+p.main-title {
+	font-family: $bodyFont;
+	font-size: 2rem;
+	color: white;
+	font-weight: 300;
+	background-color: blue;
 }
 
-p.maintitle {
-color: white;
-font-size: 2rem;
-font-family: $bodyFont;
+p.flex-text {
+	background-color: #fff;
+	color: black;
+	padding: 1%;
 }
 
-// arrow pointing down
-
-.downward-dog {
-
-}
-
-p {
-	font-family: helvetica, sans-serif;
+.main-content {
+	width: 50%;
+	background-color: black;
+	padding: 1%;
+	font-family: $titleFont;
+	font-size: 2rem;
+	color: white;
+	font-weight: 300;
+	margin: 0;
 }
