@@ -25,38 +25,40 @@
 			$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 			?>
 
-	<!-- main section with hero images [marlo] -->	
+	<!-- main section with hero images [marlo] -->
 	<div class="page-full-img" style="background-image: url(<?php echo $url?>)">
 
-		<h2 class="mainTitle"><span class="mib-title">
-			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></span>
+		<h2 class="mainTitle">
+			<span class="mib-title">
+				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+			</span>
 		</h2>
-		<div class="main-content">
-			<?php the_field( 'page_caption'); ?>
-		</div>
-		
 
-	<!-- scroll button + animate.css effect [marlo]-->
+		<!-- custom field OMG!! [marlo] -->		
+		<h3 class="mainTitle"><span class="mib-title">
+			<span class="mib-title">
+				<?php the_field( 'page_caption'); ?>
+			</span>
+		</h2>
+
+		<!-- scroll button + animate.css effect [marlo]-->
 		<div class="main-scroll"></div>
-		</div>
+
+	</div>
 
 			<?php
 		}
 	}
  ?>
-
 <?php //endwhile; ?>
-
 
 <!-- blog section - 6 posts max [marlo]-->
 <div class="main-flex">
 <?php if(have_posts()) while(have_posts()) : the_post(); ?>
 
-
 	<div class="main-postsBox">
 		<p class="flex-text">
 			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-			<?php the_content(); ?>
 		</p>
 	</div>
 

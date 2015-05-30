@@ -3,11 +3,6 @@ span.mib-title {
 	padding: 1%;
 }
 
-span.mib-body {
-	background-color: black;
-	padding: 1%;
-}
-
 h1 {
 	font-size: 7rem;
 }
@@ -17,6 +12,15 @@ h2.mainTitle {
 	color: white;
 	font-weight: 400;
 	font-family: $titleFont;
+	margin: 18px;
+}
+
+h3.mainTitle {
+	font-size: 2rem;
+	color: white;
+	font-weight: 300;
+	font-family: $titleFont;
+	margin: 18px;
 }
 
 p.main-title {
@@ -37,9 +41,5 @@ p.flex-text {
 	width: 50%;
 	background-color: black;
 	padding: 1%;
-	font-family: $titleFont;
-	font-size: 2rem;
-	color: white;
-	font-weight: 300;
 	margin: 0;
 }
