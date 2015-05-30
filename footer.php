@@ -7,8 +7,13 @@
 				<p>Theme: Microscope by <a href="/">Jane</a> and <a href="/">Marlo</a></p>
 			</div>
 			<div class="footerChild">
+
 				<p>social media stuff</p>
+
+
+				<?php  dynamic_sidebar( 'secondary-widget-area' ); ?>
 			</div>
+
   </div>
 </footer>
 
