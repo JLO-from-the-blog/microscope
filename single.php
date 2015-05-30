@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 
-<div class="main">
-  <div class="container">
+
+<div class="single-parent">
+
 
     <div class="content">
 
@@ -11,7 +12,7 @@
         
       <!-- beginning of cool image box thing -->
 
-        <div class="cool-container clearfix">
+        <div class="cool-container">
 
         <div class="image-box"></div>
         <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID, 'thumbnail') ); ?>
@@ -60,15 +61,9 @@
     </div> <!-- /.content -->
 
     
-    <div class="sidebar-parent">
-      <div class="sidebar-box">
+    <div class="sidebar">
         <div class="sidebar"><?php get_sidebar(); ?></div>  
-      </div>
     </div>
 
-
-
-  </div> <!-- /.container -->
-</div> <!-- /.main -->
-
+</div>
 <?php get_footer(); ?>

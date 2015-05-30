@@ -1,7 +1,21 @@
+.single-parent {
+	display: flex;
+	flex-direction: row;
+}
+
+
+
+.sidebar {
+	background-color: turquoise;
+}
+
+// THIS IS THE CSS FOR THE YELLOW BACKGROUND BOX
+
 .cool-container {
 	max-width: 800px;
 	position: relative;
 	margin-top: 100px;
+	margin-bottom: 80px;
 }
 
 .image-box {
@@ -20,6 +34,3 @@
 	left: 6%;	
 }
 
-.sidebar {
-	background-color: turquoise;
-}
