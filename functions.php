@@ -266,3 +266,5 @@ function get_post_parent($post) {
 		return $post->ID;
 	}
 }
+
+// vertical image support [marlo]

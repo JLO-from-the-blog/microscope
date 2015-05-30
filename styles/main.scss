@@ -94,20 +94,10 @@ body {
   width:100%;
 }
 
+/* following sections are removed by marlo, now located in _base.scss*/
+
 /* links */
-a {
-  color:#BA209B;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #D424B1;
-}
-
 /* paragraphs */
-p {
-  line-height: 1.5;
-}
 
 /*blockquotes*/
 blockquote {
