@@ -1,4 +1,5 @@
 .single-parent {
+	padding: 5%;
 	display: flex;
 	flex-direction: row;
 }
@@ -7,6 +8,7 @@
 
 .sidebar {
 	background-color: turquoise;
+
 }
 
 // THIS IS THE CSS FOR THE YELLOW BACKGROUND BOX
@@ -14,7 +16,7 @@
 .cool-container {
 	max-width: 800px;
 	position: relative;
-	margin-top: 100px;
+
 	margin-bottom: 80px;
 }
 
