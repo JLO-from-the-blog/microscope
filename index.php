@@ -30,20 +30,23 @@
 		<div class="page-full-img" style="background-image: url(<?php echo $url?>)">
 
 			<h2 class="mainTitle">
-				<span class="mib-title">
-					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+				<a href="<?php the_permalink(); ?>"><span class="mib-title">
+					<?php the_title(); ?>
 				</span>
+				</a>
 			</h2>
 
 			<!-- custom field OMG!! [marlo] -->		
 			<h3 class="mainTitle">
-				<span class="mib-title">
+				<span class="mib-title-h3">
 					<?php the_field( 'page_caption'); ?>
 				</span>
 			</h2>
 
 			<!-- scroll button + animate.css effect [marlo]-->
-			<div class="main-scroll"></div>
+			<div class="main-scroll">
+				<a href="/"<i class="fa fa-angle-down"></i></a>
+			</div>
 
 		</div>
 
@@ -55,6 +58,10 @@
 </div>
 
 <!-- blog section - 6 posts max [marlo]-->
+
+<div class="main-blog-intro">
+	<h2>Recent Posts</h2>
+</div>
 <div class="main-flex">
 <?php if(have_posts()) while(have_posts()) : the_post(); ?>
 

@@ -4,14 +4,46 @@
 }
 
 .page-full-img {
-	height: 100vh;
+	height: 90vh;
 	-webkit-background-size: cover;
 	background-size: cover;
 	object-fit: fill;
 	@include flexParentCol;
   justify-content: flex-end;
   padding: 5%;
+
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
 }
+
+.page-full-img:hover {
+ -webkit-animation: animatedBackground 1s ease-out 1;
+		-moz-animation: animatedBackground 1s ease-out 1;
+		animation: animatedBackground 1s ease-out 1;
+		-webkit-animation-fill-mode: forwards;
+		animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animatedBackground {
+		0% {
+			-webkit-transform: scale(1, 1);
+			-moz-transform: scale(1, 1);
+			-ms-transform: scale(1, 1);
+			-o-transform: scale(1, 1);
+			transform: scale(1, 1)
+		}
+		100% {
+		-webkit-transform: scale(1.03, 1.03);
+		-moz-transform: scale(1.03, 1.03);
+		-ms-transform: scale(1.03, 1.03);
+		-o-transform: scale(1.03, 1.03);
+		transform: scale(1.03, 1.03)
+		}
+
+	}
 
 .main-flex {
 	@include flexParentRow;
@@ -39,4 +71,34 @@
 .main-postsBox:nth-child(4),
 .main-postsBox:nth-child(5)  {
     background: $mainpostsAlt;
+}
+
+.main-scroll {
+	text-align: center;
+	font-size: 5rem;
+
+	a {
+	  color: $mainsection;
+	  text-decoration: none;
+	  transition: all 0.5s ease;
+	}
+	
+	a:hover {
+  color: cornflowerblue;
+	}
+}
+
+.main-content {
+	width: 50%;
+	background-color: black;
+	padding: 1%;
+	margin: 0;
+}
+
+.main-blog-intro {
+	width: 50%;
+	height: 100%;
+	background-color: cyan;
+	padding: 5%;
+	margin: 0;
 }
