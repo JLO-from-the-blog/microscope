@@ -1,5 +1,5 @@
 .default {
-	background-image: linear-gradient(to right, rgba(grey, 0.1), rgba(grey, 0.4)), url(img/diagonales_decalees.png);
+	background-image: url(img/diagonales_decalees.png);
 	background-size: repeat;
 }
 
@@ -17,20 +17,26 @@
 	@include flexParentRow;
 	justify-content: center;
   align-items: flex-start;
-	background-color: salmon;
 	flex-wrap:wrap;
+	background-color: $mainposts;
 }
 
 .main-postsBox {
-	background-color: lightgrey;
-	padding: 10px;
+	background-color: $mainposts;
+	padding: 5%;
 	flex: 1 0 50%;
+	height: 100%;
 	min-width:300px;
-	// @media (max-width:800px){
-	// 	flex: 1 0 100%;
-	// }
+	text-align: center;
+	margin: 0 auto;
 }
 
 .flex-text {
  padding: 3%;
+}
+
+.main-postsBox:nth-child(1),
+.main-postsBox:nth-child(4),
+.main-postsBox:nth-child(5)  {
+    background: $mainpostsAlt;
 }
