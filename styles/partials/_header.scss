@@ -1,8 +1,10 @@
 .header-container {
+    padding-left: 30px;
+    padding-right: 30px;
 	width: 100%;
 	position: fixed;
 	text-decoration: none;
-	background-color: rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.3);
     background-image: url();
 	display: flex;
     flex-direction: row;
@@ -11,6 +13,7 @@
 
     h1 {
     	margin: 10px;
+        font-size: 2rem;
     }
 
 	ul {
@@ -27,9 +30,10 @@
 
     a {
         color: white;
+        background-color: black;
     }
 
-    li:hover {
+    a:hover {
     	background-color: black;
         color: cyan;
     }

@@ -1,26 +1,31 @@
-span.mib-title {
+span.mib-title,
+span.mib-title-h3 {
 	background-color: black;
 	padding: 1%;
+	transition: all 0.5s ease;
 }
 
-h1 {
-	font-size: 7rem;
+span.mib-title-h3 {
+	line-height: 3rem;
+}
+.mib-title:hover {
+	opacity: 0.9;
+	background-color: darkblue;
 }
 
-h2.mainTitle {
+h2.mainTitle,
+h3.mainTitle {
 	font-size: 4rem;
 	color: white;
 	font-weight: 400;
 	font-family: $titleFont;
-	margin: 18px;
+	margin: 20px;
 }
 
 h3.mainTitle {
 	font-size: 2rem;
 	color: white;
 	font-weight: 300;
-	font-family: $titleFont;
-	margin: 18px;
 }
 
 p.main-title {
@@ -35,11 +40,4 @@ p.flex-text {
 	background-color: #fff;
 	color: black;
 	padding: 1%;
-}
-
-.main-content {
-	width: 50%;
-	background-color: black;
-	padding: 1%;
-	margin: 0;
 }
