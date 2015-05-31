@@ -1,21 +1,35 @@
 @import "partials/mixins";
 
 footer {
-  clear:both;
+	
 }
 
 .mainfooter {
   clear:both;
   background-color: grey;
-  padding: 1%;
+  padding: 2%;
+  text-align: center;
+  color: white;
+
+  i {
+  	font-size: 48px;
+  	padding-left: 15px;
+  	color: white;
+  }
+
+  a {
+	background-color: black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 2px;
+	padding-right: 2px;
+  }
+
+
+
+	 li {
+		text-decoration: none;
+		list-style: none;
+	}
 }
 
-.footerParent {
-	@include flexParentRow;
-  justify-content: space-between;
-  align-items: stretch;
-}
-
-.footerChild {
-
-}
