@@ -10,7 +10,7 @@
 .sidebar {
 	background-color: turquoise;
 	padding: 1%;
-
+	height: 100%;
 }
 
 // THIS IS THE CSS FOR THE YELLOW BACKGROUND BOX
@@ -18,23 +18,29 @@
 .cool-container {
 	max-width: 800px;
 	position: relative;
-
 	margin-bottom: 80px;
 }
 
 .image-box {
-	width: 93%;
+	width: 90%;
 	padding-bottom: 60%;
 	background-color: yellow;
 	position: relative;
 	top:0;
-	left: 0;
+	left:0;
 }
 
 .fwd-img {
 	max-width: 90%;
 	position: absolute;
 	top: 6%;
-	left: 6%;	
+	left: 4%;	
 }
 
+// styling for the post itself
+
+.content-post {
+	background-color: white;
+	padding: 50px;
+	max-width: 70%;
+}

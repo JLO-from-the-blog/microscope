@@ -4,7 +4,7 @@
 <div class="single-parent">
 
 
-    <div class="content">
+    <div class="content-post">
 
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
