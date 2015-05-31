@@ -1,11 +1,39 @@
 .page-wrapper {
 	width: 100%;
+	padding: 10%;
 }
 
-img.fmylife {
-	width: 100%;
+
+.page-content {
+	background-color: white;
+	padding: 3%;
 }
 
-.content {
-	margin: 50px;
+.page-text {
+	margin-right: 10%;
+}
+
+
+// BELOW IS THE IMAGE EFFECTS
+
+.page-img-container {
+	max-width: 100%;
+	position: relative;
+	margin-bottom: 80px;
+}
+
+.page-img-box {
+	width: 90%;
+	padding-bottom: 60%;
+	background-color: green;
+	position: relative;
+	top:0;
+	left:0;
+}
+
+img.page-img  {
+	max-width: 90%;
+	position: absolute;
+	top: 6%;
+	left: 4%;	
 }
