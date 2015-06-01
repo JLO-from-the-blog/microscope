@@ -10,22 +10,20 @@
 <div class="page-content">
 
 <!-- COOL PICTURE EFFECT -->
-	<div class="page-img-container">
+<div class="page-img-container">
+  	<div class="page-img-box"></div>
+  	 <img src="<?php echo $url ?>" class="page-img"/>
+  	</div>
 
-	<div class="page-img-box"></div>
-	 <img src="<?php echo $url ?>" class="page-img"/>
-	</div>
-
-	<div class="page-text">
-        <h2><?php the_title(); ?></h2>
-        <?php the_content(); ?>
+  	<div class="page-text">
+      <h2><?php the_title(); ?></h2>
+      <?php the_content(); ?>
 
       <?php endwhile; // end the loop?>
     </div>
+</div> <!-- /content -->
 
-</div> <!-- /,content -->
 
-
-</div> <!-- /.main -->
+</div> <!-- /main -->
 
 <?php get_footer(); ?>

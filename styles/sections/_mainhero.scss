@@ -97,9 +97,23 @@
 
 .main-blog-intro {
 	max-width: 100%;
-	height: 100%;
 	background-color: cyan;
-	padding: 5%;
-	margin: 0;
-	background-image: url(img/shattered-dark.png);
+	padding: 1%;
+	margin-left: 0px;
+	background-image: url(img/black-twill.png);
+
+}
+
+.main-blog-intro h2.blog {
+	font-size: 4rem;
+	color: black;
+	font-weight: 400;
+	font-family: $titleFont;
+
+}
+
+.main-blog-intro span.blog {
+	background-color: cyan;
+	padding: 1%;
+	margin-left: 5.5%;
 }

@@ -1,8 +1,36 @@
+.page-text h2 {
+	font-size: 4rem;
+	padding-bottom: 10px;
+	color: black;
+	font-weight: 400;
+	font-family: $titleFont;
+	margin: 10px;
+}
+
+.page-text p {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	color: black;
+	font-weight: 400;
+	font-family: $titleFont;
+	margin: 10px;
+}
+
+.page-text a {
+	  color: salmon;
+	  text-decoration: none;
+	  transition: all 0.5s ease;
+}
+	
+.page-text a:hover {
+  color: cornflowerblue;
+}
+
 .page-wrapper {
 	width: 100%;
 	padding: 10%;
-	background-color: grey;
-	background-image: url(img/shattered.png);
+	background-color: lightgrey;
+	background-image: url(img/shattered-dark.png);
 }
 
 .page-content {

@@ -1,15 +1,66 @@
-.single-parent {
-	padding: 5%;
-	display: flex;
-	flex-direction: row;
+// posts - typography
+
+.entry-title {
+  font-size: 4rem;
+  color: black;
+  font-weight: 400;
+  font-family: $titleFont;
 }
 
+.entry-content p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: black;
+  font-weight: 300;
+  font-family: $titleFont;
+}
+
+.entry-content a,
+.entry-meta a,
+.sidebar a {
+    color: salmon;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+  
+.entry-content a:hover,
+.entry-meta a:hover,
+.sidebar a:hover {
+  color: cornflowerblue;
+}
+
+// divs - marlo
+
+.single-parent {
+	display: flex;
+	flex-direction: row;
+  padding: 10%;
+  background-color: lightcyan;
+  background-image: url(img/shattered-dark.png);
+}
+
+.content-post {
+  padding: 50px;
+  max-width: 70%;
+}
+
+.content-text {
+  width: 94%;
+  background-color: white;
+  padding: 5%;
+}
+
+.navigation {
+  width: 94%;
+  background-color: #A4B5B5;
+  padding: 5%;
+}
 
 // SIDEBAR STYLING
 
 .sidebar {
-	background-color: turquoise;
-	padding: 1%;
+  background-color: lightgrey;
+	padding: 2%;
 	height: 100%;
 }
 
@@ -25,6 +76,7 @@
 	width: 90%;
 	padding-bottom: 60%;
 	background-color: yellow;
+  background-image: url(img/black-twill.png);
 	position: relative;
 	top:0;
 	left:0;
@@ -37,18 +89,9 @@
 	left: 4%;	
 }
 
-// styling for the post itself
-
-.content-post {
-	background-color: white;
-	padding: 50px;
-	max-width: 70%;
-}
-
-// comment styling ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Comment Section
 
 // #comments .navigation { padding:0 0 18px; }
-
 
 h3#comments-title, h3#reply-title {
   color: black;
@@ -127,6 +170,7 @@ input[type=submit] {
   overflow:hidden;
   position:relative;
 }
+
 #respond .comment-notes { margin-bottom:1em; }
 .form-allowed-tags { line-height:1em; }
 .children #respond { margin:0 48px 0 0; }
