@@ -57,13 +57,15 @@
 	background-color: $mainposts;
 	padding: 5%;
 	flex: 1 0 50%;
-	height: 250px;
 	min-width:300px;
 	margin: 0 auto;
+		@include flexParentCol;
+		justify-content: center;
+  	align-items: center;
 }
 
 .flex-text {
- padding: 3%;
+ 	padding: 3%;
 }
 
 .main-postsBox:nth-child(1),
@@ -71,6 +73,9 @@
 .main-postsBox:nth-child(5)  {
   background: $mainpostsAlt;
   background-image: url(img/shattered.png);
+  	@include flexParentCol;
+		justify-content: center;
+  	align-items: center;
 }
 
 .main-scroll {
@@ -119,3 +124,11 @@
 	padding: 1%;
 	margin-left: 5.5%;
 }
+
+.main-postsBox a {
+	color: white;
+	&::hover{
+		color: cyan;
+	}
+}
+
