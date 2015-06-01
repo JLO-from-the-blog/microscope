@@ -63,17 +63,18 @@
 	<h2 class="blog"><span class="blog">Our Blog</span></h2>
 </div>
 
-<div class="main-flex">
-	<?php if(have_posts()) while(have_posts()) : the_post(); ?>
+	<div class="main-flex">
+		<?php if(have_posts()) while(have_posts()) : the_post(); ?>
 
-		<div class="main-postsBox">
-		<h2><?php the_date('D M d'); ?></h2>
-			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-		</div>
-
-
-	<?php endwhile; ?>
-</div>
+			<div class="main-postsBox">
+				<a href="<?php the_permalink(); ?>">
+				<h3 class="main-blog"><?php the_date('D M d, Y'); ?></h2>
+				<h2 class="main-blog"><?php the_title(); ?></h2>
+				</a>
+			</div>
+			
+		<?php endwhile; ?>
+	</div>
 </section> <!-- main section ends -->
 
 <?php get_footer(); ?>

@@ -23,6 +23,24 @@ h3.mainTitle {
 	margin: 20px;
 }
 
+h2.main-blog {
+	font-size: 3.5rem;
+	color: white;
+	font-weight: 400;
+	font-family: $titleFont;
+	margin: 20px;
+	text-align: center;
+}
+
+h3.main-blog {
+	font-size: 1.5rem;
+	color: white;
+	font-weight: 400;
+	font-family: $titleFont;
+	margin: 20px;
+	text-align: center;
+}
+
 h3.mainTitle {
 	font-size: 2rem;
 	color: white;
@@ -41,4 +59,12 @@ p.flex-text {
 	background-color: #fff;
 	color: black;
 	padding: 1%;
+}
+
+.main-postsBox a {
+	color: white;
+}
+
+.main-postsBox a:hover {
+	color: cyan;
 }
