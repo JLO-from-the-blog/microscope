@@ -18,13 +18,6 @@ gulp.task('styles', function (){
 			.pipe(notify('Sass done'));
 });
 
-gulp.task('css', function () {
-    var postcss = require('gulp-postcss');
-    return gulp.src('*.css')
-        .pipe( postcss([ require('cssnext')(), require('cssnano')() ]) )
-        .pipe( gulp.dest('build/') );
-});
-
 gulp.task('default',function(){
 	gulp.watch('styles/**/*.scss',['styles'])
 });

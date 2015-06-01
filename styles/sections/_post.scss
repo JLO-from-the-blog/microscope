@@ -19,9 +19,9 @@
 .entry-content a,
 .entry-meta a,
 .sidebar a {
-    color: salmon;
-    text-decoration: none;
-    transition: all 0.5s ease;
+  color: salmon;
+  text-decoration: none;
+  transition: all 0.5s ease;
 }
   
 .entry-content a:hover,
@@ -97,6 +97,19 @@ input[type=search] {
   background-color: white;
 }
 
+<<<<<<< HEAD
+=======
+
+// SEARCH BAR
+
+input[type=search] { 
+  border: 0;
+  padding: 5px;
+  border-top: solid 4px yellow;
+  background-color: white;
+}
+
+>>>>>>> 82f5df56e8495e28ac46d866d7b18494db70a73a
 .sidebar input[type=submit] {
   margin: 10px;
   border: 0;
@@ -267,4 +280,54 @@ article {
 .single-parent a {
 	color:black;
 	text-decoration: underline;
+}
+
+// side bar
+
+.sidebar {
+  font-size: 1rem;
+  color: black;
+  font-weight: 300;
+  font-family: $titleFont;
+}
+
+.sidebar h3 {
+  text-transform: uppercase;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #999;
+}
+
+.sidebar a:hover {
+  text-decoration: none;
+}
+
+.sidebar-items a {
+}
+
+// side bar
+
+.sidebar {
+  font-size: 1rem;
+  color: black;
+  font-weight: 300;
+  font-family: $titleFont;
+}
+
+.sidebar h3 {
+  text-transform: uppercase;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #999;
+}
+
+.sidebar a:hover {
+  text-decoration: none;
+}
+
+.sidebar-items a {
 }
