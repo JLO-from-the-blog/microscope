@@ -21,7 +21,7 @@ Author URI: http://hackeryou.com
 @import "sections/page";
 @import "sections/post";
 @import "sections/_responsive.scss";
-
+@import "sections/_archives.scss";
 
 /* =============================================================================
                    Normalize, border box and clearfix
@@ -85,7 +85,7 @@ body {
 
 .content {
   float:left;
-  width:65%;
+  width:90%;
   margin-right: 5%;
 
 }
