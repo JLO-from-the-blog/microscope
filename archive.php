@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
-<div class="main">
+<div class="archive-wrap">
+
+  <div class="main">
   <div class="container">
     <div class="content">
 
@@ -36,5 +38,6 @@
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
+</div>
 
 <?php get_footer(); ?>
