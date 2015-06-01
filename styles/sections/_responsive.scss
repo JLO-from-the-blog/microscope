@@ -1,5 +1,13 @@
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+	.header-container {
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	background-color: black;
+	position: static;
+	padding-top: 20px;
+	}
 
 }
 

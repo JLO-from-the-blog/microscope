@@ -45,7 +45,6 @@
 }
 
 .content-text {
-  width: 94%;
   background-color: white;
   padding: 5%;
 }
@@ -67,7 +66,6 @@
 // THIS IS THE CSS FOR THE YELLOW BACKGROUND BOX
 
 .cool-container {
-	max-width: 800px;
 	position: relative;
 	margin-bottom: 80px;
 }
@@ -85,9 +83,20 @@
 .fwd-img {
 	max-width: 90%;
 	position: absolute;
-	top: 6%;
-	left: 4%;	
+  top: 12%;
+	right: 0;	
 }
+
+
+// SEARCH BAR
+
+input[type=search] { 
+  border: 0;
+  padding: 5px;
+  border-top: solid 4px yellow;
+  background-color: white;
+}
+
 
 
 // SEARCH BAR
@@ -269,6 +278,32 @@ article {
 .single-parent a {
 	color:black;
 	text-decoration: underline;
+}
+
+// side bar
+
+.sidebar {
+  font-size: 1rem;
+  color: black;
+  font-weight: 300;
+  font-family: $titleFont;
+  margin-left: 3%;
+}
+
+.sidebar h3 {
+  text-transform: uppercase;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #999;
+}
+
+.sidebar a:hover {
+  text-decoration: none;
+}
+
+.sidebar-items a {
 }
 
 // side bar

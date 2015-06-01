@@ -18,7 +18,6 @@ gulp.task('styles', function (){
 			.pipe(notify('Sass done'));
 });
 
-
 gulp.task('default',function(){
 	gulp.watch('styles/**/*.scss',['styles'])
 });
