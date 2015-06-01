@@ -9,6 +9,14 @@
 	padding-top: 20px;
 	}
 
+	.main-blog-intro h2.blog {
+		font-size: 4rem;
+	}
+
+	h2.main-blog {
+		font-size: 2rem;
+	}
+
 	.header-container h1 {
 		margin: 0px;
 	    font-size: 1.5rem;
@@ -42,6 +50,13 @@
 		margin-top: 50px;
 		padding: 10px;
 		max-width: 100%;
+	}
+
+	.main-postsBox:nth-child(1),
+	.main-postsBox:nth-child(4),
+	.main-postsBox:nth-child(5)  {
+	  background: $mainpostsAlt;
+	  background-image: url(img/shattered.png);
 	}
 
 }
