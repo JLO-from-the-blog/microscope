@@ -19,9 +19,9 @@
 .entry-content a,
 .entry-meta a,
 .sidebar a {
-    color: salmon;
-    text-decoration: none;
-    transition: all 0.5s ease;
+  color: salmon;
+  text-decoration: none;
+  transition: all 0.5s ease;
 }
   
 .entry-content a:hover,
@@ -269,4 +269,29 @@ article {
 .single-parent a {
 	color:black;
 	text-decoration: underline;
+}
+
+// side bar
+
+.sidebar {
+  font-size: 1rem;
+  color: black;
+  font-weight: 300;
+  font-family: $titleFont;
+}
+
+.sidebar h3 {
+  text-transform: uppercase;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #999;
+}
+
+.sidebar a:hover {
+  text-decoration: none;
+}
+
+.sidebar-items a {
 }
