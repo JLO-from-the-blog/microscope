@@ -1,15 +1,10 @@
 @import "partials/mixins";
 
-footer {
-	
-}
-
 .mainfooter {
   clear:both;
   background-color: grey;
-  padding: 2%;
-  text-align: center;
   color: white;
+  background-image: url(img/subtle-zebra-3d.png);
 
   i {
   	font-size: 48px;
@@ -17,19 +12,31 @@ footer {
   	color: white;
   }
 
-  a {
-	background-color: black;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-left: 2px;
-	padding-right: 2px;
-  }
-
-
-
 	 li {
 		text-decoration: none;
 		list-style: none;
 	}
 }
 
+.footerParent {
+  @include flexParentRow;
+  justify-content: center;
+  flex: 1 0 30%;
+  min-width:300px;
+}
+
+.footerChild {
+  padding: 2%;
+  margin: 1%;
+}
+
+.mainfooter a {
+  background-color: black;
+  padding: 1%;
+}
+
+.mainfooter a:hover {
+  background-color: cyan;
+  color: black;
+  padding: 1%;
+}
