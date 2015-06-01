@@ -36,11 +36,11 @@
 			transform: scale(1, 1)
 		}
 		100% {
-		-webkit-transform: scale(1.03, 1.03);
-		-moz-transform: scale(1.03, 1.03);
-		-ms-transform: scale(1.03, 1.03);
-		-o-transform: scale(1.03, 1.03);
-		transform: scale(1.03, 1.03)
+		-webkit-transform: scale(1.02, 1.02);
+		-moz-transform: scale(1.02, 1.02);
+		-ms-transform: scale(1.02, 1.02);
+		-o-transform: scale(1.02, 1.02);
+		transform: scale(1.02, 1.02)
 		}
 
 	}
@@ -54,12 +54,12 @@
 }
 
 .main-postsBox {
+	background-image: url(img/shattered-dark.png);
 	background-color: $mainposts;
 	padding: 5%;
 	flex: 1 0 50%;
 	height: 100%;
 	min-width:300px;
-	text-align: center;
 	margin: 0 auto;
 }
 
@@ -70,7 +70,8 @@
 .main-postsBox:nth-child(1),
 .main-postsBox:nth-child(4),
 .main-postsBox:nth-child(5)  {
-    background: $mainpostsAlt;
+  background: $mainpostsAlt;
+  background-image: url(img/shattered.png);
 }
 
 .main-scroll {

@@ -44,9 +44,9 @@
 			</h2>
 
 			<!-- scroll button + animate.css effect [marlo]-->
-			<div class="main-scroll">
+<!-- 			<div class="main-scroll">
 				<a href="/"<i class="fa fa-angle-down"></i></a>
-			</div>
+			</div> -->
 
 		</div>
 
