@@ -5,6 +5,22 @@
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+		.single-parent {
+			flex-direction: column;
+	}
+
+	.content-post {
+		margin-top: 50px;
+		padding: 10px;
+		max-width: 100%;
+	}
+
+	.sidebar {
+		margin-top: 50px;
+		padding: 10px;
+		max-width: 100%;
+	}
+
 }
 
 /* Landscape phones and down */
@@ -29,6 +45,10 @@
 		margin: 0px;
 	    font-size: 1.5rem;
 	    padding-left: 6px;
+	}
+
+	h2 {
+		font-size: 1rem;
 	}
 
 	.header-container ul {
