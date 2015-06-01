@@ -13,11 +13,8 @@
 	<div class="page-img-container">
 
 	<div class="page-img-box"></div>
-	<img src="<?php echo $url ?>" class="page-img"/>
-
+	 <img src="<?php echo $url ?>" class="page-img"/>
 	</div>
-
-
 
 	<div class="page-text">
         <h2><?php the_title(); ?></h2>
