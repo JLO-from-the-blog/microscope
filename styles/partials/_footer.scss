@@ -20,14 +20,15 @@
 
 .footerParent {
   @include flexParentRow;
-  justify-content: center;
-  flex: 1 0 30%;
-  min-width:300px;
+  justify-content: space-between;
+  align-items: flex-start;
+  // min-width:300px;
 }
 
 .footerChild {
-  padding: 2%;
+  padding: 3%;
   margin: 1%;
+  align-self: stretch;
 }
 
 .mainfooter a {

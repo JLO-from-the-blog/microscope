@@ -5,9 +5,9 @@
   	<div class="footerParent">
 			
 			<div class="footerChild">
-				<p>Proudly powered by <a href="/">WordPress</a></p>
+				<p><a href="/">Microscope</a> by <a href="http://www.janelytv.com/">Jane Lytvynenko</a> and <a href="http://www.value-form.com/">Marlo Hwang</a></p>
 
-				<p>Microscope by <a href="http://www.janelytv.com/">Jane Lytvynenko</a> and <a href="http://www.value-form.com/">Marlo Hwang</a></p>
+				<p>Proudly powered by <a href="/">WordPress</a></p>
 			</div>
 
 			<div class="footerChild">
@@ -15,7 +15,9 @@
 			</div>
 
 	  	<div class="footerChild">
-	  		<i class="fa fa-twitter-square"></i> <i class="fa fa-facebook-square"></i> <i class="fa fa-instagram"></i>
+	  		<i class="fa fa-twitter-square"></i>
+	  		<i class="fa fa-facebook-square"></i>
+	  		<i class="fa fa-instagram"></i>
 	  	</div>
   </div>
 </footer>

@@ -1,18 +1,20 @@
 .page-wrapper {
 	width: 100%;
 	padding: 10%;
+	background-color: grey;
+	background-image: url(img/shattered.png);
 }
 
-
 .page-content {
-	background-color: white;
 	padding: 3%;
 }
 
 .page-text {
-	margin-right: 10%;
+	width: 94%;
+	margin: 0;
+	background-color: #fff;
+	padding: 10%;
 }
-
 
 // BELOW IS THE IMAGE EFFECTS
 
@@ -25,7 +27,8 @@
 .page-img-box {
 	width: 90%;
 	padding-bottom: 60%;
-	background-color: green;
+	background-color: grey;
+	background-image: url(img/black-twill.png);
 	position: relative;
 	top:0;
 	left:0;

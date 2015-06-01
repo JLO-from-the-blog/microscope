@@ -62,17 +62,16 @@
 <div class="main-blog-intro">
 	<h2>Recent Posts</h2>
 </div>
+
 <div class="main-flex">
-<?php if(have_posts()) while(have_posts()) : the_post(); ?>
+	<?php if(have_posts()) while(have_posts()) : the_post(); ?>
 
-	<div class="main-postsBox">
-		
+		<div class="main-postsBox">
 			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+		</div>
 
-	</div>
 
-
-<?php endwhile; ?>
+	<?php endwhile; ?>
 </div>
 </section> <!-- main section ends -->
 
