@@ -59,7 +59,7 @@
 
 <!-- blog section - 6 posts max [marlo]-->
 
-<div class="main-blog-intro">
+<div class="main-blog-intro" id="blog">
 	<h2 class="blog"><span class="blog">Our Blog</span></h2>
 </div>
 
