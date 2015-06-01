@@ -15,6 +15,7 @@
   font-family: $titleFont;
 }
 
+.single-parent a,
 .entry-content a,
 .entry-meta a,
 .sidebar a {
@@ -40,12 +41,10 @@
 }
 
 .content-post {
-  padding: 50px;
   max-width: 70%;
 }
 
 .content-text {
-  width: 94%;
   background-color: white;
   padding: 5%;
 }
@@ -67,7 +66,6 @@
 // THIS IS THE CSS FOR THE YELLOW BACKGROUND BOX
 
 .cool-container {
-	max-width: 800px;
 	position: relative;
 	margin-bottom: 80px;
 }
@@ -85,13 +83,31 @@
 .fwd-img {
 	max-width: 90%;
 	position: absolute;
-	top: 6%;
-	left: 4%;	
+  top: 12%;
+	right: 0;	
 }
+
+
+// SEARCH BAR
+
+input[type=search] { 
+  border: 0;
+  padding: 5px;
+  border-top: solid 4px yellow;
+  background-color: white;
+}
+
+.sidebar input[type=submit] {
+  margin: 10px;
+  border: 0;
+  padding: 5px;
+  border-top: solid 4px yellow;
+  background-color: white;
+}
+
 
 // Comment Section
 
-// #comments .navigation { padding:0 0 18px; }
 
 h3#comments-title, h3#reply-title {
   color: black;
