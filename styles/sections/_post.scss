@@ -60,7 +60,7 @@ h3#comments-title, h3#reply-title {
 
 h3#comments-title { padding:24px 0; }
 .commentlist li.comment {
-  border-bottom:10px solid yellow;
+  border-top:10px solid yellow;
   line-height:24px;
   position:relative;
   clear:both;
@@ -68,7 +68,6 @@ h3#comments-title { padding:24px 0; }
   list-style:none;
 }
 .commentlist li:last-child {
-  border-bottom:none;
   margin-bottom:0;
 }
 #comments .comment-body ul, #comments .comment-body ol { margin-bottom:18px; }
@@ -81,12 +80,6 @@ ol.comment-list { list-style:none;}
   left:0;
 }
 
-.comment-author cite {
-  color:#000000;
-  font-style:normal;
-  font-weight:700;
-}
-.comment-author .says { font-style:italic; }
 .comment-meta {
   font-size:12px;
   margin:0 0 5px;
@@ -95,6 +88,7 @@ ol.comment-list { list-style:none;}
   color:#888888;
   text-decoration:none;
 }
+
 .reply {
   font-size:12px;
   padding:0 0 24px;
@@ -122,7 +116,6 @@ ol.comment-list { list-style:none;}
   font-size:13px;
 }
 input[type=submit] { 
- 	margin: 0;
  	border: solid 1px black;
  	background-color: white;
 
@@ -161,6 +154,7 @@ h3#reply-title { margin:18px 0; }
   color:#888888;
   font-size:12px;
   line-height:18px;
+  border-top: yellow 10px solid;
 }
 #respond dd code { font-size:11px; }
 #respond .form-submit { margin:0 0 24px; }
@@ -183,7 +177,7 @@ p.form-allowed-tags, .nocomments { display:none; }
 #respond p, #comments-list ul #respond { margin:0; }
 
 .authorbio {
-  background-color: #F5F5F5;
+  background-color: black;
   border: 1px solid grey;
   padding: 10px;
   margin-bottom: 20px;
@@ -200,7 +194,17 @@ p.form-allowed-tags, .nocomments { display:none; }
   display: inline;
 }
 
+textarea#comment {
+	border: 0;
+	border-top: 7px solid yellow;
+}
+
 article {
   border-top: 7px solid yellow;
   padding-top: 10px;
+}
+
+.single-parent a {
+	color:black;
+	text-decoration: underline;
 }
